@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS Start ===================================================== */
+header {
+  border: 1px solid black;
+  height: 80px;
+  width: 941px;
+  max-width: 2520px;
+}
+
+#header_wrap {
+  border: 1px solid red;
+  height: 100%;
+  width: 861px;
+  margin: 0 auto;
+}
+
+#footer1 {
+  display: flex;
+  border: 1px solid black;
+  width: 940.969px;
+  height: 67px;
+}
+
+#footer1_wrap {
+  border: 1px solid red;
+  height: 40px;
+  width: 861px; /*가로 padding 적용*/
+  margin: 0 auto;
+  padding: 13px 0 14px 0;
+}
+
+#footer2 {
+  display: flex;
+
+  border: 1px solid black;
+  width: 940.969px;
+  height: 65px;
+}
+
+#footer2_wrap {
+  border: 1px solid red;
+  height: 57px;
+  width: 861px; /*가로 padding 적용*/
+  margin: 0 auto;
+  padding: 0 0 8px 0;
+
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  line-height: 12px;
+  text-decoration: none solid rgb(113, 113, 113);
+  word-spacing: 0px;
+
+  color: #717171;
+}
+
+
+/*# sourceMappingURL=/UMC-W1-Clonecoding-AirBnB.9ad09f98.css.map */

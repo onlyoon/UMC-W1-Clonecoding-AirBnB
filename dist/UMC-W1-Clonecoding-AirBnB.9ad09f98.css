@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -128,49 +129,182 @@ table {
   border-spacing: 0;
 }
 /* CSS Start ===================================================== */
+
+#main {
+  width: 941px;
+  height: 4980px;
+}
+
+/* header css ==================================================== */
 header {
+  /*indicator*/
   border: 1px solid black;
+  /*=========*/
+  /*Box*/
   height: 80px;
   width: 941px;
   max-width: 2520px;
+  /*===*/
+  /*Position*/
+  display: flex;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  /*========*/
 }
 
 #header_wrap {
+  /*indicator*/
   border: 1px solid red;
+  /*=========*/
+  /*Box*/
   height: 100%;
   width: 861px;
   margin: 0 auto;
+  /*===*/
+}
+
+/* =============================================================== */
+
+/* container css ================================================= */
+
+#container1 {
+  /*indicator*/
+  border: 1px solid black;
+  /*=========*/
+  /*Box*/
+  height: 78px;
+  width: 941px;
+  padding: 20px 0 0 0;
+  /*===*/
+  /*Position*/
+  display: flex;
+  position: sticky;
+  top: 80px;
+  z-index: 2;
+  /*========*/
+}
+
+#container1_wrap {
+  /*indicator*/
+  border: 1px solid red;
+  /*=========*/
+  /*Box*/
+  height: 100%;
+  width: 861px;
+  max-height: 78px;
+  max-width: 2520px;
+  margin: 0 auto;
+  /*===*/
+  display: grid;
+}
+
+#container2 {
+  position: relative;
+  border: 1px solid black;
+  /*Box*/
+  height: 4980px;
+  width: 941px;
+  /*===*/
+  top: 80px;
+}
+
+#container2_wrap {
+  border: 1px solid red;
+  /*Box*/
+  height: 100%;
+  width: 861px;
+  margin: 0 auto;
+  /*===*/
+  /*Position*/
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: block;
+  /*========*/
+}
+
+/* =============================================================== */
+
+/* footer css ==================================================== */
+
+footer {
+  border: 1px solid #dddddd;
+  /* background-color: #f1f1f1; */
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 #footer1 {
-  display: flex;
+  /*indicator*/
   border: 1px solid black;
-  width: 940.969px;
+  /*=========*/
+  /*Box*/
   height: 67px;
+  width: 940.969px;
+  /*===*/
 }
 
 #footer1_wrap {
+  /*indicator*/
   border: 1px solid red;
+  /*=========*/
+  /*Box*/
   height: 40px;
   width: 861px; /*가로 padding 적용*/
   margin: 0 auto;
   padding: 13px 0 14px 0;
+  /*===*/
+  /*Position*/
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /*========*/
+}
+
+#footer1_left {
+  padding: 0 0 0 0;
+  display: block;
+  flex-grow: 2;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+#footer1_right {
+  flex-grow: 1;
 }
 
 #footer2 {
-  display: flex;
-
+  /*indicator*/
   border: 1px solid black;
-  width: 940.969px;
+  /*=========*/
+  /*Box*/
+  width: 941px;
   height: 65px;
+  /*===*/
+  /*Position*/
+  display: flex;
+  /*========*/
 }
 
 #footer2_wrap {
+  /*indicator*/
   border: 1px solid red;
-  height: 57px;
+  border-top: 1px solid #dddddd;
+  /*=========*/
+  /*Box*/
+  height: 52px;
   width: 861px; /*가로 padding 적용*/
   margin: 0 auto;
-  padding: 0 0 8px 0;
+  padding: 4px 0 8px 0;
+  /*===*/
 
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
@@ -181,6 +315,33 @@ header {
   word-spacing: 0px;
 
   color: #717171;
+}
+
+/* =============================================================== */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  display: block;
+  float: left;
+  padding: 4px;
+}
+
+ol {
+  display: inline;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 

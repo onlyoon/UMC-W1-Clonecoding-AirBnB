@@ -135,6 +135,11 @@ table {
   height: 4980px;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 /* header css ==================================================== */
 header {
   /*indicator*/
@@ -165,6 +170,25 @@ header {
   width: 861px;
   margin: 0 auto;
   /*===*/
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.logo {
+  height: 80px;
+  width: 140px;
+  display: block;
+  min-height: auto;
+  min-width: auto;
+}
+
+.search {
+  flex-grow: 2;
+}
+
+.your_info {
+  flex-grow: 2;
 }
 
 /* =============================================================== */
@@ -235,7 +259,7 @@ header {
 
 footer {
   border: 1px solid #dddddd;
-  /* background-color: #f1f1f1; */
+  background-color: #f7f7f7;
   position: sticky;
   bottom: 0px;
   display: flex;
@@ -265,20 +289,41 @@ footer {
   /*Position*/
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   /*========*/
 }
 
 #footer1_left {
-  padding: 0 0 0 0;
-  display: block;
+  display: inline-block;
   flex-grow: 2;
+  line-height: 14px;
+  font-size: 14px;
   list-style-type: decimal;
   list-style-position: outside;
 }
 
+insc {
+  text-decoration: none solid rgb(34, 34, 34);
+  word-spacing: 0px;
+}
+
+c_info {
+  line-height: 18px;
+  text-decoration: underline solid rgb(34, 34, 34);
+  text-align: left;
+  word-spacing: 0px;
+}
+
 #footer1_right {
   flex-grow: 1;
+  display: inline;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+#earth_img {
+  width: 16px;
+  height: 16px;
 }
 
 #footer2 {

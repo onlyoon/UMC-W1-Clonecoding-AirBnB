@@ -173,6 +173,7 @@ header {
   display: flex;
   flex-direction: row;
   position: relative;
+  align-items: center;
 }
 
 .logo {
@@ -194,14 +195,21 @@ header {
 
 #your_info_components {
   height: 80px;
-  width: 350px;
+  width: 500px;
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 
 #your_info_component1 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+#your_info_component2 {
+  display: flex;
+  align-items: center;
 }
 
 #your_space_airbnb {
@@ -228,6 +236,16 @@ header {
   flex-direction: row;
   width: 75px;
   height: 40px;
+}
+
+#your_info_button_1_svg {
+  width: 30px;
+  height: 100%;
+}
+
+#your_info_button_2_svg {
+  width: 30px;
+  height: 100%;
 }
 
 /* =============================================================== */

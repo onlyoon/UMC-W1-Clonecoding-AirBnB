@@ -178,14 +178,10 @@ header {
 .logo {
   height: 80px;
   width: 140px;
-  display: block;
+  flex: 1 0 140px;
   min-height: auto;
   min-width: auto;
-}
-
-.logo_a {
-  vertical-align: middle;
-  word-spacing: 0px;
+  text-align: center;
 }
 
 .search {

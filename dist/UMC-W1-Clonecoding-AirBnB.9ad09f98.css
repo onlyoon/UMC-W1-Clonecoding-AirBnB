@@ -138,6 +138,8 @@ table {
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
 }
 
 label {
@@ -230,6 +232,7 @@ header {
   border-bottom-left-radius: 21px;
   border: 1px solid #ccc;
   border-right: 0px;
+  cursor: pointer;
 }
 
 #search_button2 {
@@ -241,6 +244,7 @@ header {
   border-left: 0px;
   border-right: 0px;
   border-bottom: 1px solid #ccc;
+  cursor: pointer;
 }
 
 #search_button3 {
@@ -252,6 +256,7 @@ header {
   border-bottom-right-radius: 21px;
   border: 1px solid #ccc;
   border-left: 0px;
+  cursor: pointer;
 }
 
 #search_button1_div {
@@ -359,6 +364,10 @@ header {
   align-items: center;
 }
 
+#your_space_airbnb:hover {
+  background-color: #f5f5f5;
+}
+
 #earth_icon {
   border-radius: 50%;
   width: 42px;
@@ -366,6 +375,10 @@ header {
   cursor: pointer;
   border: 0px;
   background-color: #ffffff;
+}
+
+#earth_icon:hover {
+  background-color: #f5f5f5;
 }
 
 #your_info_button {
@@ -381,6 +394,10 @@ header {
   cursor: pointer;
   background-color: #ffffff;
   border: 0.5px solid #ccc;
+}
+
+#nav_button:hover {
+  box-shadow: 0px 1.5px 4px 0px #cecece;
 }
 
 #your_info_button_1_svg {
@@ -586,6 +603,7 @@ header {
   margin-bottom: 12px;
   width: 271px;
   height: 257.438px;
+  cursor: pointer;
 }
 
 #picture {
@@ -744,6 +762,7 @@ header {
   column-gap: 8px;
   line-height: 19px;
   row-gap: 2px;
+  cursor: pointer;
 }
 
 #description_title {
@@ -779,7 +798,8 @@ header {
   grid-column-start: 1;
   text-overflow: ellipsis;
   margin-top: 6px;
-  font-weight: 600;
+  font-weight: 550;
+  font-size: 15px;
 }
 
 #description_rate {
@@ -795,6 +815,10 @@ header {
 #description_rate_svg {
   height: 12px;
   width: 12px;
+}
+
+#description_rate_num {
+  margin-left: 4px;
 }
 
 /* ========================================================================== */

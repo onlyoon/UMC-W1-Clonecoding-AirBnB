@@ -1,12 +1,8 @@
 import "./styles.css";
 
-// const imgslides = document.querySelectorAll(".img_slides")[1];
 const imgslide = document.querySelectorAll(".img_wrap li");
-// let currentIdx = 0;
 const slideCount = imgslide.length;
 let slideWidth = 271;
-// const leftBtn = document.querySelectorAll(".left_slider_button")[1];
-// const rightBtn = document.querySelectorAll(".right_slider_button")[1];
 let currentIdx = new Array(9);
 const imgslides = new Array(9);
 const leftBtn = new Array(9);

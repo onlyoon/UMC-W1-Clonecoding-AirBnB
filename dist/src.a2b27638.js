@@ -176,13 +176,9 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("./styles.css");
-// const imgslides = document.querySelectorAll(".img_slides")[1];
 var imgslide = document.querySelectorAll(".img_wrap li");
-// let currentIdx = 0;
 var slideCount = imgslide.length;
 var slideWidth = 271;
-// const leftBtn = document.querySelectorAll(".left_slider_button")[1];
-// const rightBtn = document.querySelectorAll(".right_slider_button")[1];
 var currentIdx = new Array(9);
 var imgslides = new Array(9);
 var leftBtn = new Array(9);

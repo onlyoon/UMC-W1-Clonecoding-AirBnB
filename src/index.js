@@ -1,20 +1,46 @@
 import "./styles.css";
 
-const imgslides = document.querySelector(".img_slides");
+// const imgslides = document.querySelectorAll(".img_slides")[1];
 const imgslide = document.querySelectorAll(".img_wrap li");
-let currentIdx = 0;
+// let currentIdx = 0;
 const slideCount = imgslide.length;
-const leftBtn = document.querySelector(".left_slider_button");
-const rightBtn = document.querySelector(".right_slider_button");
 let slideWidth = 271;
+// const leftBtn = document.querySelectorAll(".left_slider_button")[1];
+// const rightBtn = document.querySelectorAll(".right_slider_button")[1];
+let currentIdx = new Array(9);
+const imgslides = new Array(9);
+const leftBtn = new Array(9);
+const rightBtn = new Array(9);
 
-imgslides.style.width = slideWidth * slideCount + "px";
+for (let i = 0; i < 9; i++) {
+  imgslides[i] = document.querySelectorAll(".img_slides")[i];
+  leftBtn[i] = document.querySelectorAll(".left_slider_button")[i];
+  rightBtn[i] = document.querySelectorAll(".right_slider_button")[i];
+  imgslides[i].style.width = slideWidth * slideCount + "px";
+  currentIdx[i] = 0;
 
-function moveImgSlide(num) {
-  imgslides.style.left = num * 270 + "px";
-  currentIdx = num;
+  rightBtn[i].addEventListener("click", function () {
+    if (currentIdx[i] === 4) {
+      moveImgSlide(currentIdx[i] + 1);
+      // rightBtn[i].style.visibility = "hidden";
+    } else moveImgSlide(currentIdx[i] + 1, i);
+    // if (leftBtn[i].style.visibility === "hidden") {
+    //   leftBtn[i].style.visibility = "visible";
+    // }
+  });
+
+  leftBtn[i].addEventListener("click", function () {
+    if (currentIdx[i] === 0) {
+      moveImgSlide(currentIdx[i] - 1);
+      // leftBtn[i].style.visibility = "hidden";
+    } else moveImgSlide(currentIdx[i] - 1, i);
+    // if (rightBtn[i].style.visibility === "hidden") {
+    //   rightBtn[i].style.visibility = "visible";
+    // }
+  });
 }
 
-rightBtn.addEventListener("click", function () {
-  moveImgSlide(currentIdx + 1);
-});
+function moveImgSlide(num, i) {
+  imgslides[i].style.left = "-" + num * slideWidth + "px";
+  currentIdx[i] = num;
+}

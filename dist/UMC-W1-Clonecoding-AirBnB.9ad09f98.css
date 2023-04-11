@@ -132,7 +132,7 @@ table {
 
 #main {
   width: 941px;
-  height: 2000px;
+  height: 1300px;
 }
 
 body {
@@ -567,7 +567,7 @@ header {
   position: relative;
   /* border: 1px solid black; */
   /*Box*/
-  height: 2000px;
+  height: 1300px;
   width: 941px;
   /*===*/
   top: 80px;
